@@ -1,21 +1,29 @@
 ---
 import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
-const { title } = Astro.props
+import Navigation from '../components/Navigation.astro';
+
+import "../styles/styles.css"
+
+interface Props {
+  title: string;
+  description: string;
+  publishDate: string;
+  viewCount: number;
+}
+const { title, description, publishDate, viewCount } = Astro.props;
 ---
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- Favicon -->
+    <link rel="icon" href="/favicon.svg" />
     <BaseHead title={title}/>
   </head>
   <body>
     <nav>
-      <a href="index">Home</a>
-      <a href="cv">CV</a>
-      <a href="portfolio">Portfolio</a>
-      <a href="bio">About</a>
-      <a href="contact">Contact</a>
+      <Navigation />
     </nav>
     <h1>{title}</h1>
     <article>
