@@ -1,0 +1,18 @@
+---
+const {frontmatter} = Astro.props;
+
+import Navigation from "../components/Navigation.astro";
+import "../styles/styles.css"
+---
+<html>
+  <head>
+    <!-- ... -->
+    <Navigation /> 
+    <meta charset="utf-8"> 
+  </head>
+  <!-- ... -->
+  <h1>{frontmatter.title}</h1>
+  <slot /> <!-- Markdown content is injected here -->
+  <!-- ... -->
+   <h2>Last updated: {frontmatter.date}</h2>
+</html>
