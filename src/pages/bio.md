@@ -11,6 +11,6 @@ viewCount: 0
 
 I am Erick Almeida.
 
-It makes sense a portfolio of all that is Erick ought to make the an effort to show the man alonside his works.
+It makes sense a portfolio of all that is Erick ought to make the an effort to show the man alongside his works.
 
 ![A Picture of the guy in question](/Beard-Mugshot.jpg)
