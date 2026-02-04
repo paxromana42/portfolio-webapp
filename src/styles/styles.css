@@ -1,3 +1,27 @@
+/* styles.css */
+
+:root {
+  --t-amber: #FFB000;
+  --t-lt-amber: #ffcc00;
+
+  --t-green-one: #33ff00;
+  --t-appleii: #33ff33;
+  --t-green-two: #00ff33;
+
+  --t-apple-iic: #66ff66;
+  --t-green-three: #00ff66;
+
+  --t-background: #282828;
+
+  /* complemtary colours */
+
+  --complentary-green: #1AFF00;
+  /* base green - 00FF66 */
+  --mid-teal: #00FFE5;
+  --complentary-magenta: #E600FF;
+  --complentary-red: #FF001A
+}
+
 img {
     max-width: 500px;
 }
@@ -5,8 +29,8 @@ img {
 @font-face {
   font-display: swap;
   font-family: "Roboto Serif", serif, system-ui;
-  src:  url("/fonts/RobotoSerif.woff2") format("woff2"),
-        url("/fonts/RobotoSerif.woff") format("woff");
+  src:  url("fonts/RobotoSerif.woff2") format("woff2"),
+        url("fonts/RobotoSerif.woff") format("woff");
   font-style: normal;
   font-weight: 400;
 }
@@ -14,14 +38,16 @@ img {
 @font-face {
   font-display: swap;
   font-family: "Roboto Serif", serif, system-ui;
-  src:  url("/fonts/RobotoSerif-Italic.woff2") format("woff2"),
-        url("/fonts/RobotoSerif-Italic.woff") format("woff");
+  src:  url("fonts/RobotoSerif-Italic.woff2") format("woff2"),
+        url("fonts/RobotoSerif-Italic.woff") format("woff");
   font-style: italic;
   font-weight: 400;
 }
 
 body {
     font-family: "Roboto Serif";
+    color: var(--t-green-three);
+    background-color: var(--t-background);
 }
 
 h1, h2 {
@@ -49,12 +75,12 @@ p {
   font-size: 1.2rem;
   font-weight: bold;
   text-transform: uppercase;
-  color: #0cdd0f;
+  color: var(--t-apple-iic);
 }
 
 .nav-links a:hover,
 .nav-links a:focus {
-  background-color: #ff9776;
+  background-color: var(--complentary-magenta);
 }
 
 @media screen and (min-width: 636px) {
