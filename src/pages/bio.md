@@ -11,8 +11,4 @@ viewCount: 0
 
 I am Erick Almeida.
 
-As a up am coming professional, it feels right and just to make a brief review of the man alongside all of these showcases of the skills of the man.
-
-
-
 ![A Picture of the guy in question](/Beard-Mugshot.jpg)
