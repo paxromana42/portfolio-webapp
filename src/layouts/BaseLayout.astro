@@ -25,10 +25,14 @@ const { title, description, publishDate, viewCount } = Astro.props;
     <nav>
       <Navigation />
     </nav>
-    <h1>{title}</h1>
-    <article>
-      <slot /> <!-- your content is injected here -->
-    </article>
+    <main class="page-container">
+      <h1>{title}</h1>
+        <article>
+      
+          <slot /> <!-- your content is injected here -->
+     
+        </article>
+    </main>
     <Footer />
   </body>
 </html>

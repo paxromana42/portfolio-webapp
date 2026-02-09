@@ -1,0 +1,60 @@
+---
+import MySiteLayout from '../layouts/BaseLayout.astro';
+import CVSection from '../components/cv-section.astro';
+import CVComponent from '../components/cv-components.astro';
+---
+
+<MySiteLayout title="Curriculum Vitae"
+              description="A detailed overview of my education and work experience"
+              publishDate="8 February 2026"
+              viewCount={0}>
+    
+<CVSection title="Education">
+    <CVComponent
+    institution="Liberty University"
+    location="Lynchburg, VA"
+    field="Bachelor of Science in Information Technology"
+    date="2022 - 2025"
+    from="2022"
+    to="2026"
+    tags={["education", "it", "networking"]}
+    >
+        <ul>
+            <li>Cognate: <bold>Data Networking and Security</bold></li>
+            <li>Relevant Coursework: Windows System Admin, Information Security Policies, Networking, Cyber Security, Database Management Systems, Discrete Structures and Python</li>
+        </ul>
+
+    </CVComponent>
+
+    <CVComponent
+    institution="Cambridge University-Institute of Continuing Education"
+    location="Cambridge, UK"
+    field="Summer Programme"
+    date="2023"
+    from="2023"
+    to="2023"
+    tags={["elective", "summer programme", "ai", "cryptography", "microbiology", "history of science"]}
+    >
+        <ul>
+            <li>AI Ethics, Cryptography, Microbiology, History of Science</li>
+        </ul>
+    </CVComponent>
+
+    <CVComponent
+    institution="SUNY Westchester Community College"
+    location="Valhalla, NY"
+    field="Associate of Science in Information Technology"
+    date="2019 - 2023"
+    from="2019"
+    to="2023"
+    tags={["education", "computer science", "data", "programming", "c++", "java", "machine learning"]}
+    >
+        <ul>
+            <li>Relevant Coursework: C++, Data Structures, Computer Architecture, Java, Machine Learning</li>
+            <li>Electives: Student Government Senator, Summer Scholar's Program (AI Research)</li>
+        </ul>
+    </CVComponent>
+
+    </CVSection>
+
+</MySiteLayout>

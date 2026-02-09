@@ -1,0 +1,19 @@
+---
+const { institution, location, field, date, from, to, tags } = Astro.props;
+---
+
+<article
+  class="cv-entry"
+  data-from={from}
+  data-to={to}
+  data-tags={tags?.join(',')}
+>
+    <div class="entry-institution">{institution}</div>
+    <div class="entry-location">{location}</div>
+    <div class="entry-field">{field}</div>
+    <div class="entry-dates">{date}</div>
+
+    <div class="entry-extra">
+        <slot />
+    </div>
+</article>
