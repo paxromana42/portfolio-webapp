@@ -1,11 +1,37 @@
 ---
-
+import Logo from '/public/Egg.svg';
+import GitHubIcon from '/public/socials/github.svg';
+import LinkedInIcon from '/public/socials/linkedin.svg';
+import EmailIcon from '/public/socials/mail.svg';
+import { Image } from 'astro:assets';
 ---
 
-<div id="nav-bar" class="nav-links">
-    <a href="/">Home</a>
-    <a href="/cv/">CV</a>
-    <a href="/portfolio/">Portfolio</a>
-    <a href="/bio/">About</a>
-    <a href="/contact/">Contact</a>
-</div>
+<header class="site-header">
+  <div class="header-inner">
+
+    <div class="logo-container">
+      <Image src={Logo} alt="Logo" class="logo-img" />
+    </div>
+
+    <nav class="main-nav">
+      <a href="/">Home</a>
+      <a href="/cv/">CV</a>
+      <a href="/portfolio/">Portfolio</a>
+      <a href="/bio/">About</a>
+      <a href="/contact/">Contact</a>
+    </nav>
+
+    <div class="social-icons">
+      <a href="https://github.com/paxromana42" aria-label="GitHub">
+        <Image src={GitHubIcon} alt="GitHub" class="social-svg" />
+      </a>
+      <a href="https://linkedin.com/in/ega-domum" aria-label="LinkedIn">
+        <Image src={LinkedInIcon} alt="LinkedIn" class="social-svg" />
+      </a>
+      <a href="mailto:me@erickalmeida.tech" aria-label="Email">
+        <Image src={EmailIcon} alt="Email" class="social-svg" />
+      </a>
+    </div>
+
+  </div>
+</header>

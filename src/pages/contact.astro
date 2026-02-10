@@ -1,5 +1,6 @@
 ---
 import MySiteLayout from '../layouts/BaseLayout.astro';
+import { Image } from 'astro:assets';
 ---
 
 <MySiteLayout title="Contact"
@@ -7,4 +8,8 @@ import MySiteLayout from '../layouts/BaseLayout.astro';
               publishDate="30 January 2026" 
               viewCount={0}>
   <p>No yet Holmes, give me a min</p>
+  
+  <div class="contact-info" style="text-align: center;">
+    <Image src="/Forum.png" alt="Place Holder for actual logic" width={300} height={250} />
+  </div>  
 </MySiteLayout>

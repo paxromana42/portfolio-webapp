@@ -2,17 +2,34 @@
 const {frontmatter} = Astro.props;
 
 import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
+import BaseHead from "../components/BaseHead.astro";
 import "../styles/styles.css"
 ---
 <html>
   <head>
     <!-- ... -->
-    <Navigation /> 
+     <style>
+      /* Add any page-specific styles here */
+      img {
+        height: 300px;
+      }
+    </style>
     <meta charset="utf-8"> 
   </head>
-  <!-- ... -->
-  <h1>{frontmatter.title}</h1>
-  <slot /> <!-- Markdown content is injected here -->
-  <!-- ... -->
-   <h2>Last updated: {frontmatter.date}</h2>
+  <body>
+    <Navigation />      
+    <main class="page-container">
+    <h1>{frontmatter.title}</h1>
+    <slot /> <!-- Markdown content is injected here -->
+    <!-- ... -->
+      <p id="Last-Updated" style="text-align:right; font-size:0.75rem; font-weight:bold; font-style: italic;">Last updated: {frontmatter.date}</p>
+
+    </main>
+
+    <footer class="site-footer">
+      <Footer />
+    </footer> 
+  </body>
+
 </html>

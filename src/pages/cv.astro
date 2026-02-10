@@ -2,6 +2,7 @@
 import MySiteLayout from '../layouts/BaseLayout.astro';
 import CVSection from '../components/cv-section.astro';
 import CVComponent from '../components/cv-components.astro';
+import CvComponents from '../components/cv-components.astro';
 ---
 
 <MySiteLayout title="Curriculum Vitae"
@@ -13,21 +14,20 @@ import CVComponent from '../components/cv-components.astro';
     <CVComponent
     institution="Liberty University"
     location="Lynchburg, VA"
-    field="Bachelor of Science in Information Technology"
+    field="Bachelor of Science in Information Technology: Data Networking and Security Cognate"
     date="2022 - 2025"
     from="2022"
     to="2026"
     tags={["education", "it", "networking"]}
     >
         <ul>
-            <li>Cognate: <bold>Data Networking and Security</bold></li>
-            <li>Relevant Coursework: Windows System Admin, Information Security Policies, Networking, Cyber Security, Database Management Systems, Discrete Structures and Python</li>
+            <li>Relevant Coursework: Windows System Admin, Information Security Policies, Networking, Cyber Security, Database Management Systems, Discrete Structures and Python.</li>
         </ul>
 
     </CVComponent>
 
     <CVComponent
-    institution="Cambridge University-Institute of Continuing Education"
+    institution="Cambridge University Institute of Continuing Education"
     location="Cambridge, UK"
     field="Summer Programme"
     date="2023"
@@ -36,7 +36,7 @@ import CVComponent from '../components/cv-components.astro';
     tags={["elective", "summer programme", "ai", "cryptography", "microbiology", "history of science"]}
     >
         <ul>
-            <li>AI Ethics, Cryptography, Microbiology, History of Science</li>
+            <li>Coursework: AI Ethics, Cryptography, Microbiology, History of Science.</li>
         </ul>
     </CVComponent>
 
@@ -50,10 +50,20 @@ import CVComponent from '../components/cv-components.astro';
     tags={["education", "computer science", "data", "programming", "c++", "java", "machine learning"]}
     >
         <ul>
-            <li>Relevant Coursework: C++, Data Structures, Computer Architecture, Java, Machine Learning</li>
-            <li>Electives: Student Government Senator, Summer Scholar's Program (AI Research)</li>
+            <li>Relevant Coursework: C++, Data Structures, Computer Architecture, Java, Machine Learning.</li>
+            <li>Electives: Student Government Senator, Summer Scholar's Program (AI Research), Cambridge Summer Programme (See above).</li>
         </ul>
     </CVComponent>
+
+    <CvComponents
+    institution="Brasilia International School"
+    location="Brasilia, Brazil"
+    field="High School Diploma"
+    date="2017 - 2019"
+    from="2017"
+    to="2019"
+    tags={["education", "high school", "general education"]}
+    />
 
     </CVSection>
 

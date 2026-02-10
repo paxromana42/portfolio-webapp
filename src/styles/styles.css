@@ -12,35 +12,58 @@
   --t-green-three: #00ff66;
 
   --t-background: #282828;
+  --t-header-background: #cacaca;
 
-  /* complemtary colours */
-
+  /* complementary colours */
   --complentary-green: #1AFF00;
-  /* base green - 00FF66 */
   --mid-teal: #00FFE5;
   --complentary-magenta: #E600FF;
-  --complentary-red: #FF001A
+  --complentary-red: #FF001A;
 }
 
+
+/* Global image reset */
 img {
-    max-width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 750px;
+    height: auto;
 }
 
 /* ===== Page reading container ===== */
-
 .page-container {
     max-width: 90%;
-    margin-left: 8%;
+    margin-left: 5%;
     margin-right: auto;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 
-/* fonts loaded with font-display swap for performance */
+/* Footer styling */
+.site-footer {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: auto;
+    padding: 1.5rem;
+    background-color: var(--t-header-background); /* match header or use a new color */
+    color: var(--t-background);
+}
+
+/* Footer link styles (if any inside footer) */
+.site-footer a {
+    color: var(--t-background);
+    text-decoration: none;
+    font-size: 0.75rem;
+}
+
+.site-footer a:hover {
+    color: var(--complentary-magenta);
+}
+/* ===== Fonts ===== */
 @font-face {
   font-family: "Roboto Serif";
   src: url("/fonts/RobotoSerif.woff2") format("woff2"),
        url("/fonts/RobotoSerif.woff") format("woff");
-  font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
@@ -49,18 +72,10 @@ img {
   font-family: "Roboto Serif";
   src: url("/fonts/RobotoSerif-Italic.woff2") format("woff2"),
        url("/fonts/RobotoSerif-Italic.woff") format("woff");
-  font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 
-
-
-body {
-    font-family: "Roboto Serif";
-    color: var(--t-green-three);
-    background-color: var(--t-background);
-}
 
 h1, h2 {
     text-align: center;
@@ -68,86 +83,140 @@ h1, h2 {
 
 p {
     text-align: justify;
+    line-height: 1.5;
+}
+/* ===== Header & Navbar ===== */
+
+/* Make the background seamless at top */
+html {
+    background-color: var(--t-header-background);
 }
 
-
-/* nav styles */
-
-.nav-links {
-  width: 100%;
-  display: none;
-  margin: 0;
+body {
+    margin: 0;
+    padding-top: 0;
+    font-family: "Roboto Serif";
+    color: var(--t-amber);
+    background-color: var(--t-background);
 }
 
-/* nav styles */
-.nav-links {
-  width: 100%;
-  display: none;
-  margin: 0;
-}
-
-.nav-links a {
-  display: block;
-  text-align: center;
-  padding: 10px 0;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: var(--t-apple-iic);
-  position: relative;
-  transition: 0.25s ease;
-}
-
-.nav-links a:hover,
-.nav-links a:focus {
-  color: var(--complentary-magenta);
-}
-
-.nav-links a::after {
-  content: "";
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background: var(--complentary-magenta);
-  transition: width 0.3s ease;
-}
-
-.nav-links a:hover::after,
-.nav-links a:focus::after,
-.nav-links a.active::after {
-  width: 100%;
-}
-
-@media screen and (min-width: 636px) {
-  .nav-links {
-    margin-left: 5em;
-    display: block;
+/* Main nav wrapper */
+.site-header {
     position: static;
-    width: auto;
-    background: none;
-  }
+    top: 0;
+    background-color: var(--t-header-background);
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+    z-index: 100;
+    padding: 0.5rem 0rem 1rem 0rem;
+}
 
-  .nav-links a {
-    display: inline-block;
-    padding: 15px 20px;
+/* Mobile-first stacked layout */
+.header-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 0.5rem;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: auto;
+}
+
+/* Color the logo SVG to match nav text */
+.logo-img {
+    width: 160px;
+    height: auto;
+    max-height: 90px;
+    fill: var(--t-background);         /* default color */
+    transition: fill 0.2s ease;
+}
+
+/* Highlight logo on hover (optional) */
+.logo-container:hover .logo-img {
+    fill: var(--complentary-magenta);
+}
+
+/* Navigation links */
+.main-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    font-size: large;
+}
+.main-nav a {
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--t-background);
+}
+.main-nav a:hover {
+    color: var(--complentary-magenta);
+}
+
+/* ===== Social Icons ===== */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-svg {
+    width: 30px;
+    height: 30px;
+    fill: var(--t-background);         /* match nav text color */
+    transition: fill 0.2s ease;
+}
+
+.social-icons a:hover .social-svg {
+    fill: var(--complentary-magenta);  /* highlight on hover */
+}
+
+/* ===== Desktop layout (>=900px) ===== */
+@media screen and (min-width: 900px) {
+  .site-header {
+    top: 0;
+    position: sticky;
+    transition: position 0.2s ease;
+  }
+  .header-inner {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:5%;
+    margin-right:auto
+  }
+  .logo-container {
+      flex: 1;
+      text-align: left;
+  }
+  .main-nav {
+    flex: 2;
+  }
+  .social-icons {
+    flex: 1;
+    justify-content: flex-end;
   }
 }
+
+
 
 
 /* ===== CV SECTION BASE ===== */
 
 .cv-section {
-    margin: 3rem 0;          /* no auto-centering */
-    padding: 0;              /* let page-container handle padding */
+    margin: 3rem 0;
+    padding: 0;
 }
-
 
 .cv-section h2 {
     text-align: center;
-    border-bottom: 1px solid var(--t-apple-iic);
+    border-bottom: 1px solid var(--t-amber);
     padding-bottom: 6px;
     margin-bottom: 1.5rem;
     font-weight: 500;
@@ -159,16 +228,16 @@ p {
     left: -9999px;
 }
 
-/* ===== GENERIC CV ENTRY (for experience, certs, projects) ===== */
+/* ===== GENERIC CV ENTRY ===== */
 
 .cv-entry {
     display: grid;
     grid-template-columns: 1fr auto;
     row-gap: 2px;
     column-gap: 12px;
-    margin-bottom: 0.8rem;
-    font-size: 0.95rem;
-    line-height: 1.3;
+    margin-bottom: 0.5rem;
+    /* font-size: 0.95rem; */
+    line-height: 1.25;
 }
 
 .entry-institution {
@@ -193,7 +262,6 @@ p {
 
 .entry-extra {
     grid-column: 1 / 3;
-    margin-top: 2px;
-    font-size: 0.92rem;
+    margin-top: 0px;
+    font-size: 0.9rem;
 }
-
