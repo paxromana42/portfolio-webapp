@@ -3,6 +3,7 @@ import MySiteLayout from '../layouts/BaseLayout.astro';
 import CVSection from '../components/cv-section.astro';
 import CVComponent from '../components/cv-components.astro';
 import CvComponents from '../components/cv-components.astro';
+import { ACTION_ERROR_CODES } from 'astro:actions';
 ---
 
 <MySiteLayout title="Curriculum Vitae"
@@ -113,6 +114,20 @@ import CvComponents from '../components/cv-components.astro';
                 <li>Gained insight in finding and correcting non-compliance with Help Desk policy issued devices.</li>  
             </ul>
         </CVComponent>
+        <CvComponents
+        institution="Shake Shack"
+        location="Hartsdale, NY"
+        field="Team Member"
+        date="2021"
+        from="2021"
+        to="2021"
+        tags={["work experience", "team member", "customer service", "operations"]}
+        >
+            <ul>
+                <li>Managed incoming daily supply shipments, incoming tickets and guest interactions.</li>
+                <li>Handled spikes in activity and issues both in daily fluctuation and yearly patterns.</li>
+                <li>Maintained order accuracy, transparency and timeliness through effective communication with guests. </li>
+            </ul>
     </CVSection>
 
 </MySiteLayout>
