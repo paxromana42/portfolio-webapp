@@ -22,43 +22,103 @@
 }
 
 
-/* Global image reset */
-img {
+/* Global image reset
+.img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    max-width: 750px;
+    max-width: 30%;
     height: auto;
-}
+} */
 
 /* ===== Page reading container ===== */
 .page-container {
-    max-width: 90%;
-    margin-left: 5%;
-    margin-right: auto;
-    padding: 1.5rem;
+
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+
+
 }
 
 /* Footer styling */
-.site-footer {
+/* .site-footer {
     max-width: 90%;
     margin-left: 5%;
     margin-right: auto;
     padding: 1.5rem;
-    background-color: var(--t-header-background); /* match header or use a new color */
+    background-color: var(--t-header-background);
     color: var(--t-background);
+} */
+
+.site-footer {
+    background-color: var(--t-header-background);
+    color: var(--t-background);
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 0.85rem;
+    /* border-top: 2px solid var(--t-apple-iic); */
 }
 
-/* Footer link styles (if any inside footer) */
 .site-footer a {
     color: var(--t-background);
-    text-decoration: none;
-    font-size: 0.75rem;
+text-decoration: none;
+    margin: 0 0.5rem;
 }
 
 .site-footer a:hover {
     color: var(--complentary-magenta);
 }
+
+/* ===== Footer Logo Credit ===== */
+.footer-brand {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: auto;
+    padding: 0rem 1.5rem 0rem 1.5rem;
+}
+.footer-logo-credit {
+    font-size: 0.75rem;
+    color: var(--t-background); /* a softer accent color */
+    margin-top: 0.5rem;
+    opacity: 0.9;
+}
+
+.footer-logo-credit a {
+    color: var(--complentary-red);
+    text-decoration: underline;
+}
+
+.footer-logo-credit a:hover {
+    color: var(--complentary-magenta);
+}
+
+/* ===== Footer Social Icons (horizontal row) ===== */
+.footer-social {
+    display: flex;
+    justify-content: center;
+    gap: .25rem;
+    margin-top: 0.75rem;
+}
+
+.footer-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social-svg {
+    width: 35px;
+    height: 35px;
+    fill: var(--t-background); /* match footer text color */
+    transition: fill 0.2s ease;
+}
+
+.footer-social a:hover .footer-social-svg {
+    fill: var(--complentary-magenta);
+}
+
+
 /* ===== Fonts ===== */
 @font-face {
   font-family: "Roboto Serif";
@@ -116,24 +176,26 @@ body {
     display: flex;
     flex-direction: column;
     align-items: left;
-    gap: 0.5rem;
+    gap: .75rem;
     width: 90%;
-    margin-left: 5%;
+    margin-left: 0;
     margin-right: auto;
 }
 
-/* Color the logo SVG to match nav text */
+/* Force logo color to match nav text */
 .logo-img {
-    width: 160px;
-    height: auto;
-    max-height: 90px;
-    fill: var(--t-background);         /* default color */
-    transition: fill 0.2s ease;
+  color: var(--t-background);
+  height: auto;
+  width: 175px;
 }
 
-/* Highlight logo on hover (optional) */
+.logo-container{
+    padding: 0;
+    text-align: center;
+}
+
 .logo-container:hover .logo-img {
-    fill: var(--complentary-magenta);
+  color: var(--complentary-magenta);
 }
 
 /* Navigation links */
@@ -141,8 +203,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem;
+    gap: 1.5rem;
     font-size: large;
+    padding: 2rem 0rem 0rem 0rem;
 }
 .main-nav a {
     text-decoration: none;
@@ -157,7 +220,8 @@ body {
 .social-icons {
     display: flex;
     justify-content: center;
-    gap: 0.8rem;
+    gap: 0.1rem;
+    padding: 2rem 0rem 0rem 0rem;
 }
 
 .social-icons a {
@@ -167,8 +231,8 @@ body {
 }
 
 .social-svg {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     fill: var(--t-background);         /* match nav text color */
     transition: fill 0.2s ease;
 }
@@ -202,6 +266,16 @@ body {
     flex: 1;
     justify-content: flex-end;
   }
+  .page-container
+    {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-right: auto;
+    padding: 1.5rem;
+    }
+
+
+    
 }
 
 
@@ -263,5 +337,20 @@ body {
 .entry-extra {
     grid-column: 1 / 3;
     margin-top: 0px;
-    font-size: 0.9rem;
+    font-size: 1rem;
+}
+
+/* Markdown content images */
+.page-container picture,
+.page-container img {
+    display: block;
+    text-align: center;
+}
+
+.page-container picture img,
+.page-container img {
+    max-width: min(500px, 85%);
+    height: auto !important;
+    margin: 2rem auto;
+    border-radius: 6px;
 }

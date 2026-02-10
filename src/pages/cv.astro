@@ -10,61 +10,109 @@ import CvComponents from '../components/cv-components.astro';
               publishDate="8 February 2026"
               viewCount={0}>
     
-<CVSection title="Education">
-    <CVComponent
-    institution="Liberty University"
-    location="Lynchburg, VA"
-    field="Bachelor of Science in Information Technology: Data Networking and Security Cognate"
-    date="2022 - 2025"
-    from="2022"
-    to="2026"
-    tags={["education", "it", "networking"]}
-    >
-        <ul>
-            <li>Relevant Coursework: Windows System Admin, Information Security Policies, Networking, Cyber Security, Database Management Systems, Discrete Structures and Python.</li>
-        </ul>
+    <CVSection title="Certifications">
+        <CVComponent
+        institution="CompTIA"
+        
+        field="Security+ Certified Professional"
+        date="Pursuing by February 2026"
+        from="2026"
+        to="2029"
+        tags={["certification", "cyber security", "hardware", "software"]}
+        />
+        <CVComponent
+        institution="CompTIA"
+        
+        field="A+ Certified Professional"
+        date="2026"
+        from="2026"
+        to="2029"
+        tags={["certification", "it support", "hardware", "software", "troubleshooting"]}
+        />
+        <CVComponent
+        institution="Python Institute"
+        
+        field="Python Associate"
+        date="2023"
+        from="2023"
+        to="2023"
+        tags={["certification", "python", "programming", "software development"]}
+        />
 
-    </CVComponent>
+    <CVSection title="Education">
+        <CVComponent
+        institution="Liberty University"
+        location="Lynchburg, VA"
+        field="Bachelor of Science in Information Technology: Data Networking and Security Cognate"
+        date="2022 - 2025"
+        from="2022"
+        to="2026"
+        tags={["education", "it", "networking"]}
+        >
+            <ul>
+                <li>Relevant Coursework: Windows System Admin, Information Security Policies, Networking, Cyber Security, Database Management Systems, Discrete Structures and Python.</li>
+            </ul>
 
-    <CVComponent
-    institution="Cambridge University Institute of Continuing Education"
-    location="Cambridge, UK"
-    field="Summer Programme"
-    date="2023"
-    from="2023"
-    to="2023"
-    tags={["elective", "summer programme", "ai", "cryptography", "microbiology", "history of science"]}
-    >
-        <ul>
-            <li>Coursework: AI Ethics, Cryptography, Microbiology, History of Science.</li>
-        </ul>
-    </CVComponent>
+        </CVComponent>
 
-    <CVComponent
-    institution="SUNY Westchester Community College"
-    location="Valhalla, NY"
-    field="Associate of Science in Information Technology"
-    date="2019 - 2023"
-    from="2019"
-    to="2023"
-    tags={["education", "computer science", "data", "programming", "c++", "java", "machine learning"]}
-    >
-        <ul>
-            <li>Relevant Coursework: C++, Data Structures, Computer Architecture, Java, Machine Learning.</li>
-            <li>Electives: Student Government Senator, Summer Scholar's Program (AI Research), Cambridge Summer Programme (See above).</li>
-        </ul>
-    </CVComponent>
+        <CVComponent
+        institution="Cambridge University Institute of Continuing Education"
+        location="Cambridge, UK"
+        field="Summer Programme"
+        date="2023"
+        from="2023"
+        to="2023"
+        tags={["elective", "summer programme", "ai", "cryptography", "microbiology", "history of science"]}
+        >
+            <ul>
+                <li>Coursework: AI Ethics, Cryptography, Microbiology, History of Science.</li>
+            </ul>
+        </CVComponent>
 
-    <CvComponents
-    institution="Brasilia International School"
-    location="Brasilia, Brazil"
-    field="High School Diploma"
-    date="2017 - 2019"
-    from="2017"
-    to="2019"
-    tags={["education", "high school", "general education"]}
-    />
+        <CVComponent
+        institution="SUNY Westchester Community College"
+        location="Valhalla, NY"
+        field="Associate of Science in Information Technology"
+        date="2019 - 2023"
+        from="2019"
+        to="2023"
+        tags={["education", "computer science", "data", "programming", "c++", "java", "machine learning"]}
+        >
+            <ul>
+                <li>Relevant Coursework: C++, Data Structures, Computer Architecture, Java, Machine Learning.</li>
+                <li>Electives: Student Government Senator, Summer Scholar's Program (AI Research), Cambridge Summer Programme (See above).</li>
+            </ul>
+        </CVComponent>
 
+        <CvComponents
+        institution="Brasilia International School"
+        location="Brasilia, Brazil"
+        field="High School Diploma"
+        date="2017 - 2019"
+        from="2017"
+        to="2019"
+        tags={["education", "high school", "general education"]}
+        />
+
+    </CVSection>
+
+    <CVSection title="Experience">
+        <CVComponent
+        institution="Liberty University IT Department"
+        location="Lynchburg, VA"
+        field="IT Support Specialist"
+        date="2023 - 2025"
+        from="2023"
+        to="2025"
+        tags={["work experience", "it support", "windows", "linux", "networking", "cyber security"]}
+        >
+            <ul>
+                <li>Gained proficiency in ServiceNow by triaging over 700 customers.</li>
+                <li>Shadowed technicians to learn troubleshooting skills to efficiently triage and resolve common issues.</li>
+                <li>Managed over 300 reservations and ad-hoc withdraws of IT loaner stock through WebCheckout.</li>
+                <li>Gained insight in finding and correcting non-compliance with Help Desk policy issued devices.</li>  
+            </ul>
+        </CVComponent>
     </CVSection>
 
 </MySiteLayout>

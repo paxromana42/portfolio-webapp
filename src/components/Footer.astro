@@ -1,4 +1,41 @@
 ---
----
+import Logo from '/public/Egg.svg';
+import GitHubIcon from '/public/socials/github.svg';
+import LinkedInIcon from '/public/socials/linkedin.svg';
+import EmailIcon from '/public/socials/mail.svg';
 
-Logo drawing design by Eliane Almeida, refined by Ísis S.M.V Alves and reviewed by Eciane Romeiro.
+import { Image } from 'astro:assets';
+---
+<footer class="site-footer">
+  <div class="footer-inner">
+    <!-- Copyright + Logo Credit -->
+    <div class="footer-brand">
+      <p>&copy; {new Date().getFullYear()} Erick G Almeida</p>
+      <p class="footer-logo-credit">
+        Logo design by Eliane Almeida, refined by Ísis S.M.V Alves and reviewed by Eciane Romeiro.</a>
+      </p>
+    </div>
+
+    <!-- Footer links -->
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/cv/">CV</a>
+      <a href="/portfolio/">Portfolio</a>
+      <a href="/bio/">About</a>
+      <a href="/contact/">Contact</a>
+    </div>
+
+    <!-- Social icons -->
+    <div class="footer-social">
+    <a href="https://github.com/paxromana42" aria-label="GitHub">
+        <Image src={GitHubIcon} alt="GitHub" class="footer-social-svg" />
+    </a>
+    <a href="https://linkedin.com/in/ega-domum" aria-label="LinkedIn">
+        <Image src={LinkedInIcon} alt="LinkedIn" class="footer-social-svg" />
+    </a>
+    <a href="mailto:me@erickalmeida.tech" aria-label="Email">
+        <Image src={EmailIcon} alt="Email" class="footer-social-svg" />
+    </a>
+    </div>
+  </div>
+</footer>
