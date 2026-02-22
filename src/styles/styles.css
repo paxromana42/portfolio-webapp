@@ -176,7 +176,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: left;
-    gap: .75rem;
+    gap: .5rem;
     width: 90%;
     margin-left: 0;
     margin-right: auto;
@@ -186,7 +186,8 @@ body {
 .logo-img {
   color: var(--t-background);
   height: auto;
-  width: 175px;
+  width: 75%;
+  align-self: left;
 }
 
 .logo-container{
@@ -203,9 +204,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1rem;
     font-size: large;
-    padding: 2rem 0rem 0rem 0rem;
+    padding: 2.75rem 0rem 0rem 0rem;
 }
 .main-nav a {
     text-decoration: none;
@@ -219,7 +220,7 @@ body {
 /* ===== Social Icons ===== */
 .social-icons {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     gap: 0.75rem;
     padding: 2rem 0rem 0rem 0rem;
 }
@@ -231,8 +232,8 @@ body {
 }
 
 .social-svg {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     fill: var(--t-background);         /* match nav text color */
     transition: fill 0.2s ease;
 }
@@ -251,27 +252,30 @@ body {
   .header-inner {
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
+    max-width: 88.094%;
     margin-left:5%;
-    margin-right:auto
+    margin-right:auto;
+    padding: 0rem 2rem 0rem 2rem
   }
   .logo-container {
       flex: 1;
       text-align: left;
+      align-self: left;
   }
   .main-nav {
     flex: 2;
   }
   .social-icons {
     flex: 1;
-    justify-content: flex-end;
+    justify-content: right;
   }
   .page-container
     {
     max-width: 90%;
     margin-left: 5%;
     margin-right: auto;
-    padding: 1.5rem;
+    padding: 2rem;
     }
 
 
@@ -311,7 +315,7 @@ body {
     column-gap: 12px;
     margin-bottom: 0.5rem;
     /* font-size: 0.95rem; */
-    line-height: 1.25;
+    /* line-height: 1.25; */
 }
 
 .entry-institution {
@@ -337,7 +341,8 @@ body {
 .entry-extra {
     grid-column: 1 / 3;
     margin-top: 0px;
-    font-size: 1rem;
+    font-size: .9rem;
+    line-height: 1.25;
 }
 
 /* Markdown content images */
