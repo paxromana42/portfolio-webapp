@@ -72,10 +72,10 @@ text-decoration: none;
 
 /* ===== Footer Logo Credit ===== */
 .footer-brand {
-    max-width: 90%;
+    max-width: 85%;
     margin-left: 5%;
     margin-right: auto;
-    padding: 0rem 1.5rem 0rem 1.5rem;
+    padding: 0rem 2rem 0rem 2rem;
 }
 .footer-logo-credit {
     font-size: 0.75rem;
@@ -108,8 +108,8 @@ text-decoration: none;
 }
 
 .footer-social-svg {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
     fill: var(--t-background); /* match footer text color */
     transition: fill 0.2s ease;
 }
@@ -142,7 +142,6 @@ h1, h2 {
 }
 
 p {
-    text-align: justify;
     line-height: 1.5;
 }
 /* ===== Header & Navbar ===== */
@@ -158,6 +157,7 @@ body {
     font-family: "Roboto Serif";
     color: var(--t-amber);
     background-color: var(--t-background);
+    text-align: justify;
 }
 
 /* Main nav wrapper */
@@ -175,25 +175,26 @@ body {
 .header-inner {
     display: flex;
     flex-direction: column;
-    align-items: left;
-    gap: .5rem;
-    width: 90%;
-    margin-left: 0;
-    margin-right: auto;
+    align-items: center;
+    gap: 0.5rem;
+    width: 80%;
+    margin: auto;
 }
 
 /* Force logo color to match nav text */
 .logo-img {
   color: var(--t-background);
   height: auto;
-  width: 75%;
-  align-self: left;
+  width: 45%;
+  align-self: center;
 }
 
 .logo-container{
     padding: 0;
     text-align: center;
+    padding: 0rem;
 }
+
 
 .logo-container:hover .logo-img {
   color: var(--complentary-magenta);
@@ -206,7 +207,7 @@ body {
     justify-content: center;
     gap: 1rem;
     font-size: large;
-    padding: 2.75rem 0rem 0rem 0rem;
+    padding: 0rem;
 }
 .main-nav a {
     text-decoration: none;
@@ -220,9 +221,9 @@ body {
 /* ===== Social Icons ===== */
 .social-icons {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     gap: 0.75rem;
-    padding: 2rem 0rem 0rem 0rem;
+    padding: 0rem 0rem 0rem 0rem;
 }
 
 .social-icons a {
@@ -253,7 +254,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     /* align-items: center; */
-    max-width: 88.094%;
+    max-width: 85%;
     margin-left:5%;
     margin-right:auto;
     padding: 0rem 2rem 0rem 2rem
@@ -262,17 +263,20 @@ body {
       flex: 1;
       text-align: left;
       align-self: left;
+      width: 75%;
   }
   .main-nav {
     flex: 2;
+    padding: 2.75rem 0rem 0rem 0rem;
   }
   .social-icons {
     flex: 1;
     justify-content: right;
+    padding: 2rem 0rem 0rem 0rem;
   }
   .page-container
     {
-    max-width: 90%;
+    max-width: 85%;
     margin-left: 5%;
     margin-right: auto;
     padding: 2rem;
@@ -287,10 +291,10 @@ body {
 
 /* ===== CV SECTION BASE ===== */
 
-.cv-section {
+/* .cv-section {
     margin: 3rem 0;
     padding: 0;
-}
+} */
 
 .cv-section h2 {
     text-align: center;
