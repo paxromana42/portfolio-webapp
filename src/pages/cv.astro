@@ -39,7 +39,7 @@ import { ACTION_ERROR_CODES } from 'astro:actions';
         to="2023"
         tags={["certification", "python", "programming", "software development"]}
         />
-
+    </CVSection>
     <CVSection title="Education">
         <CVComponent
         institution="Liberty University"
@@ -55,7 +55,7 @@ import { ACTION_ERROR_CODES } from 'astro:actions';
             </ul>
 
         </CVComponent>
-
+    
         <CVComponent
         institution="Cambridge University Institute of Continuing Education"
         location="Cambridge, UK"
@@ -85,7 +85,7 @@ import { ACTION_ERROR_CODES } from 'astro:actions';
             </ul>
         </CVComponent>
 
-        <CvComponents
+        <CVComponent
         institution="Brasilia International School"
         location="Brasilia, Brazil"
         field="High School Diploma"
@@ -99,6 +99,24 @@ import { ACTION_ERROR_CODES } from 'astro:actions';
 
     <CVSection title="Experience">
         <CVComponent
+        institution="IT-RS"
+        location="Remote"
+        field="Help Desk Analyst (Service Desk Analyst)"
+        date="2026 - Present"
+        from="2026"
+        to="Present"
+        tags={["work experience", "it support", "windows", "VPN", "networking", "cyber security", "remote work", "service desk", "IAM"]}
+        >
+             <ul>
+                <li> Contracted to New York State ITS, providing L1 enterprise support for state employees, agency partners, local government and public users.</li>
+                <li>Resolve 25+ tickets a day (1,600+ since completing training) for state employees, agency partners, county governments and the public, meeting SLA targets across a statewide queue.</li>
+                <li>Restore access and administer MFA through delegated admin roles in Active Directory, Okta, Socure and RSA SecurID, verifying caller identity before every unlock, reset or re-enrolment.</li>
+                <li>Diagnose VPN and connectivity failures by isolating account, network and device-level causes; resolve endpoint issues remotely or escalate with full documentation (99.9% of calls logged in ServiceNow).</li>
+
+            </ul>
+        </CVComponent>
+        
+        <CVComponent
         institution="Liberty University IT Department"
         location="Lynchburg, VA"
         field="IT Support Specialist"
@@ -108,13 +126,13 @@ import { ACTION_ERROR_CODES } from 'astro:actions';
         tags={["work experience", "it support", "windows", "linux", "networking", "cyber security"]}
         >
             <ul>
-                <li>Gained proficiency in ServiceNow by triaging over 700 customers.</li>
+                <li>Triaged 700+ walk-up requests, routing to standard queues or VIP-priority handling by issue type and user status.</li>
                 <li>Shadowed technicians to learn troubleshooting skills to efficiently triage and resolve common issues.</li>
-                <li>Managed over 300 reservations and ad-hoc withdraws of IT loaner stock through WebCheckout.</li>
-                <li>Gained insight in finding and correcting non-compliance with Help Desk policy issued devices.</li>  
+                <li>Coordinated 300+ reservations and retrieval of IT loaners and classroom microphones through WebCheckout</li>
+                <li>Onboarded students, faculty and guests to the EduRoam network and resolved front-line issues such as Outlook rule errors without escalation.</li>  
             </ul>
         </CVComponent>
-        <CvComponents
+        <CVComponent
         institution="Shake Shack"
         location="Hartsdale, NY"
         field="Team Member"
@@ -128,6 +146,7 @@ import { ACTION_ERROR_CODES } from 'astro:actions';
                 <li>Handled spikes in activity and issues both in daily fluctuation and yearly patterns.</li>
                 <li>Maintained order accuracy, transparency and timeliness through effective communication with guests. </li>
             </ul>
+        </CVComponent>
     </CVSection>
 
 </MySiteLayout>

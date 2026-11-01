@@ -15,7 +15,7 @@ It makes sense a portfolio of all that is Erick ought to make the an effort to s
 
 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
 
-![A Picture of the guy in question](/Beard-Mugshot.jpg)
+![A Picture of the guy in question](https://media.licdn.com/dms/image/v2/D4E03AQHYpxjMyItBIQ/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1687829924899?e=1795046400&v=beta&t=dgrrRD5c318yao5XqNto9EmZcsLl3fQ_jL9kR65mVDU)
 
 Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed diam urna tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl malesuada lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad litora torquent per conubia nostra inceptos himenaeos.
 
